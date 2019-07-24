@@ -1,0 +1,10 @@
+<ng-container *ngIf="(video | async) as video">
+  <h1>{{video.title}}</h1>
+  <h2>{{video.author}}</h2>
+  <iframe
+    [src]="url | async"
+    width="560"
+    height="315"
+    frameborder="0"
+  ></iframe>
+</ng-container>

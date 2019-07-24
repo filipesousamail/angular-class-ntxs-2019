@@ -1,0 +1,9 @@
+.selected {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.preview {
+  padding: 5px;
+  margin: 5px;
+}

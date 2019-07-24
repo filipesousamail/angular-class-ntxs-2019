@@ -1,0 +1,7 @@
+<div *ngFor="let video of videos"
+  class="preview"
+  [class.selected]="(selectedVideoId | async) === video.id"
+  [routerLink]=""
+  [queryParams]="{ selectedVideoId: video.id }">
+  <app-video-item [video]="video"></app-video-item>
+</div>

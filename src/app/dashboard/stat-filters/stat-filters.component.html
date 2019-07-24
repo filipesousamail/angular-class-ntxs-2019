@@ -1,0 +1,19 @@
+<h5>Search</h5>
+
+<form [formGroup]="search" (ngSubmit)="submit()">
+  <label for="title">Title</label>
+  <input id="title" formControlName="title">
+
+  <br>
+
+  <label for="author">Author</label>
+  <input id="author" formControlName="author">
+
+  <br>
+
+  <button [disabled]="!search.valid">Submit</button>
+</form>
+
+<pre>{{search.value | json}}</pre>
+Valid: <pre>{{search.valid}}</pre>
+Title Valid: <pre>{{search.get('title')?.valid}}</pre>
